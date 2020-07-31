@@ -1,0 +1,26 @@
+{% extends "login_app/base.html" %}
+{% load static %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block body_block %}
+<div class="jumbotron">
+  <div class="container">
+    {% if registered %}
+    <h1>You are already registered</h1>
+    {% else %}
+    <h1>Register</h1>
+    <h3>Please fill in your information</h3>
+    <form enctype="multipart/form-data" method="post">
+      {% csrf_token %}
+      {{user_form.as_p}}
+      {{profile_form}}
+      <br>
+      <input type="submit" name="register">
+    </form>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

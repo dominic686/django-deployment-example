@@ -1,0 +1,50 @@
+{% extends "login_app/base.html" %}
+{% load static %}
+
+{% block title%}
+Index
+{% endblock %}
+
+{% block body_block %}
+<link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 class="">Welcome to Undergroud Wallet</h1>
+    <img src="{% static "images/bulldog.svg" %}" width="150px" class="mt-2">
+    <p class="mt-2">Where you can manage your finance illegally</p>
+  </div>
+</div>
+<div class="container my-4">
+  <h2 class="text-center">Why Undergroud Wallet?</h2>
+  <hr>
+  <div class="mt-4">
+    <div class="row">
+     <div class="col">
+       <img src="{% static "images/give.png" %}" alt="" width="300px" class="mr-1">
+     </div>
+     <div class="col my-auto">
+       <h3>Stable system</h3>
+       <p>Undergroud Wallet is designed by professional programer. There is no need to worry about mistaken transaction.</p>
+     </div>
+    </div>
+    <hr>
+    <div class="row">
+     <div class="col my-auto">
+       <h3>Partner cooperation</h3>
+       <p>We have cooperate with high credibility. Backend system is connected to advance security API. </p>
+     </div>
+     <div class="col">
+       <img src="{% static "images/partner.png" %}" alt="" width="300px" class="mr-1">
+     </div>
+    </div>
+  </div>
+</div>
+<div class="container get-start my-2">
+  <h2>Get starting</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <ol>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+  </ol>
+</div>
+{% endblock %}
